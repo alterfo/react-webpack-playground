@@ -23,7 +23,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="container">
                 <ul>
                     <li>
                         {this.state.loggedIn ? (

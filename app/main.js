@@ -3,11 +3,13 @@ import { render } from 'react-dom'
 import { browserHistory, Router, Route, Link } from 'react-router'
 import Auth from './services/Auth'
 
-import Header from './components/Header'
+import App from './components/App'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
 import About from './components/About'
 import Logout from './components/Logout'
+
+import './main.css'
 
 function requireAuth(nextState, replace) {
     if (!Auth.loggedIn()) {
@@ -20,7 +22,7 @@ function requireAuth(nextState, replace) {
 
 render((
     <Router history={browserHistory}>
-        <Route path="/" component={Header}>
+        <Route path="/" component={App}>
             <Route path="login" component={Login} />
             <Route path="logout" component={Logout} />
             <Route path="about" component={About} />
