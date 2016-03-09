@@ -1,5 +1,5 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'eval-source-maps',
@@ -44,6 +44,6 @@ module.exports = {
       colors: true,
       historyApiFallback: true,
       inline: true,
-      port: 3000
+      port: 3030
     }
 };
