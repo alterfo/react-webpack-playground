@@ -33,7 +33,7 @@ module.exports = {
     },
 
     onChange() {}
-}
+};
 
 function pretendRequest(email, pass, cb) {
     setTimeout(() => {
